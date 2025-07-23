@@ -136,7 +136,19 @@
     th {
       background: #f0f0f0;
     }
+     @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
 
+      select, button {
+        font-size: 1rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -414,9 +426,9 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 let data = [];
     // Define which columns to use for filtering and displaying
-    const filterCols = ["Type", "Item", "Empresa", "Size", "Materials", "Greyboard", "Matte", "Linen Finish", "Finish", "Printing \/Color"];
+    const filterCols = ["Type", "Item", "Empresa", "Size", "Materials", "Greyboard", "Matte", "Line Finish", "Finish", "Printing/Color"];
     const displayCols = [
-      "Type", "Item", "Empresa", "ID", "Qty", "Size", "Materials", "Greyboard", "Matte", "Linen Finish", "Finish", "Printing \/Color",
+      "Type", "Item", "Empresa", "ID", "Qty", "Size", "Materials", "Greyboard", "Matte", "Line Finish", "Finish", "Printing/Color",
       "Cost Per 1000", "Cost Per 1500", "Cost Per 2000", "Cost Per 3000",
       "Cost Per 5000", "Cost Per 8000", "Cost Per 10000", "Mold Cost"
     ];
